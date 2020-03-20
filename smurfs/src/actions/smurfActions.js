@@ -1,0 +1,11 @@
+export const ADD_SMURF = "ADD_SMURF";
+
+export const addSmurf = smurf => {
+  return { type: ADD_SMURF, payload: smurf };
+};
+
+export const SET_DATA = "SET_DATA";
+
+export const setData = data => {
+  return { type: SET_DATA, payload: data };
+};
