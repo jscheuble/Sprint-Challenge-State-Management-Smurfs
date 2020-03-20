@@ -1,4 +1,4 @@
-import { ADD_SMURF, SET_DATA } from "../actions/smurfActions";
+import { SET_DATA } from "../actions/smurfActions";
 
 export const initialState = {
   smurfs: [],
@@ -16,11 +16,6 @@ export const smurfReducer = (state = initialState, action) => {
         ...state,
         smurfs: action.payload
       };
-    // case ADD_SMURF:
-    //   return {
-    //     ...state,
-    //     smurfs: [...smurfs, action.payload]
-    //   };
     default:
       return state;
   }
